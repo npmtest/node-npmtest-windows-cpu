@@ -1,1 +1,40 @@
-{     "devDependencies": {         "windows-cpu": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-windows-cpu",     "homepage": "https://github.com/npmtest/node-npmtest-windows-cpu",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-windows-cpu.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [windows-cpu (v0.1.4)](https://github.com/KyleRoss/windows-cpu)  [![npm package](https://img.shields.io/npm/v/npmtest-windows-cpu.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-windows-cpu) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-windows-cpu.svg)](https://travis-ci.org/npmtest/node-npmtest-windows-cpu)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "utility2": "kaizhu256/node-utility2#alpha",
+        "windows-cpu": "*"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-windows-cpu",
+    "keywords": [
+        "coverage",
+        "test",
+        "windows-cpu"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_windows_cpu.js",
+    "name": "npmtest-windows-cpu",
+    "nameAlias": "npmtest_windows_cpu",
+    "nameOriginal": "npmtest-windows-cpu",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-windows-cpu.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
