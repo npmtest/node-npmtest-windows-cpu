@@ -1,6 +1,6 @@
 # npmtest-windows-cpu
 
-#### test coverage for  [windows-cpu (v0.1.4)](https://github.com/KyleRoss/windows-cpu)  [![npm package](https://img.shields.io/npm/v/npmtest-windows-cpu.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-windows-cpu) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-windows-cpu.svg)](https://travis-ci.org/npmtest/node-npmtest-windows-cpu)
+#### basic test coverage for  [windows-cpu (v0.1.4)](https://github.com/KyleRoss/windows-cpu)  [![npm package](https://img.shields.io/npm/v/npmtest-windows-cpu.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-windows-cpu) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-windows-cpu.svg)](https://travis-ci.org/npmtest/node-npmtest-windows-cpu)
 
 #### CPU monitoring utilities for Node.js apps on Windows.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-windows-cpu/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-windows-cpu/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-windows-cpu/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-windows-cpu/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-windows-cpu/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-windows-cpu/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-windows-cpu/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-windows-cpu/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-windows-cpu/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-windows-cpu/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-windows-cpu/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-windows-cpu/build/coverage.html/index.html)
 
@@ -77,7 +77,8 @@
         "url": "git+https://github.com/KyleRoss/windows-cpu.git"
     },
     "scripts": {},
-    "version": "0.1.4"
+    "version": "0.1.4",
+    "bin": {}
 }
 ```
 
